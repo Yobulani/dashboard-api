@@ -3,7 +3,6 @@ const server = jsonServer.create()
 const router = jsonServer.router('db.json')
 const middlewares = jsonServer.defaults()
 
-// ВАЖНО: порт из переменной окружения Render
 const port = process.env.PORT || 3001
 
 server.use(middlewares)
